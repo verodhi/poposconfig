@@ -23,8 +23,8 @@ groupadd docker
 gpasswd -a $USER docker
 
 # Install Anki Web
-wget https://github.com/ankitects/anki/releases/download/2.1.24/anki-2.1.24-linux-amd64.tar.bz2
-tar xjf Downloads/anki-2.1.24-amd64.tar.bz2
-cd anki-2.1.24-linux-amd64
+wget https://github.com/ankitects/anki/releases/download/2.1.26/anki-2.1.26-linux-amd64.tar.bz2
+tar xjf $HOME/Downloads/anki-2.1.26-linux-amd64.tar.bz2
+cd anki-2.1.26-linux-amd64
 make install
-cd $HOME/Downloads
+
