@@ -11,13 +11,12 @@ apt -y remove firefox libreoffice-common libreoffice-core
 apt -y update
 apt -y autoremove
 
-snap install snap-store firefox obs-studio chromium remmina libreoffice gimp gitkraken vlc fast postman darktable teams-for-linux docker
+snap install snap-store firefox obs-studio chromium remmina libreoffice gimp gitkraken vlc fast postman darktable teams-for-linux docker ksnip
 snap install --classic code
 snap install --classic skype
 snap install --classic slack
 snap install --classic deja-dup
 snap install --classic atom
-snap install ksnip
 
 groupadd docker
 gpasswd -a $USER docker
@@ -29,3 +28,7 @@ tar xjf anki-2.1.26-linux-amd64.tar.bz2
 cd anki-2.1.26-linux-amd64
 make install
 
+# Install Oracle Java for work
+#add-apt-repository -y ppa:linuxuprising/java
+#apt -y update
+#apt -y install oracle-java14-installer
