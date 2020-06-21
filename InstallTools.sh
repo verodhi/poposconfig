@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak gnome-tweaks exfat-fuse exfat-utils
+apt -y install flatpak snapd gnome-tweaks exfat-fuse exfat-utils
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
@@ -21,7 +21,7 @@ flatpak install -y org.videolan.VLC
 flatpak install -y org.inkscape.Inkscape
 flatpak install -y com.getpostman.Postman
 flatpak install -y org.darktable.Darktable
-flatpak install -y com.visualstudio.code
+#flatpak install -y com.visualstudio.code
 
 flatpak install -y com.microsoft.Teams
 flatpak install -y com.slack.Slack
@@ -34,6 +34,11 @@ flatpak install -y org.gnome.Mines
 flatpak install -y com.valvesoftware.Steam
 flatpak install -y org.godotengine.Godot
 flatpak install -y org.gnome.Chess
+
+# Snap packages
+snap install -y snap
+snap install chromium
+sudo snap install code --classic
 
 # Install Docker
 apt remove docker docker-engine docker.io containerd runc
