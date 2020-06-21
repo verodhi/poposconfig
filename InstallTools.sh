@@ -36,8 +36,7 @@ flatpak install -y org.godotengine.Godot
 flatpak install -y org.gnome.Chess
 
 # Snap packages
-snap install -y snap
-snap install chromium
+snap install snap-store chromium
 sudo snap install code --classic
 
 # Install Docker
