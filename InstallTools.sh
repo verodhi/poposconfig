@@ -1,23 +1,45 @@
-# Get Admin mode
-sudo su
+# Run as root 'sudo su'
 
 # Apt operations
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install snapd gnome-tweaks exfat-fuse exfat-utils
-apt -y remove firefox libreoffice-common libreoffice-core
-
+apt -y install flatpak gnome-tweaks exfat-fuse exfat-utils
+apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
 
-snap install snap-store firefox obs-studio chromium remmina libreoffice gimp gitkraken vlc fast postman darktable teams-for-linux docker ksnip
-snap install --classic code
-snap install --classic skype
-snap install --classic slack
-snap install --classic deja-dup
-snap install --classic atom
+flatpak install -y flathub
+flatpak install -y org.mozilla.firefox
+flatpak install -y com.obsproject.Studio
+flatpak install -y chromium org.remmina.Remmina
+flatpak install -y org.libreoffice.LibreOffice
+flatpak install -y org.gimp.GIMP
+flatpak install -y org.blender.Blender
+flatpak install -y org.videolan.VLC
+flatpak install -y org.inkscape.Inkscape
+flatpak install -y com.getpostman.Postman
+flatpak install -y org.darktable.Darktable
+flatpak install -y com.visualstudio.code
 
+flatpak install -y com.microsoft.Teams
+flatpak install -y com.slack.Slack
+flatpak install -y com.discordapp.Discord
+flatpak install -y org.gnome.DejaDup
+flatpak install -y com.uploadedlobster.peek
+
+# Games
+flatpak install -y org.gnome.Mines
+flatpak install -y com.valvesoftware.Steam
+flatpak install -y org.godotengine.Godot
+flatpak install -y org.gnome.Chess
+
+# Install Docker
+apt remove docker docker-engine docker.io containerd runc
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
 groupadd docker
 gpasswd -a $USER docker
 
@@ -27,6 +49,13 @@ cd $HOME/Downloads
 tar xjf anki-2.1.26-linux-amd64.tar.bz2
 cd anki-2.1.26-linux-amd64
 make install
+cd $HOME/Downloads
+rm -r anki-2.1.26-linux-amd64
+rm anki-2.1.26-linux-amd64.tar.bz2
+
+apt -y update
+apt -y upgrade
+apt -y autoremove
 
 # Install Oracle Java for work
 #add-apt-repository -y ppa:linuxuprising/java
