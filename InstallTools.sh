@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd gnome-tweaks exfat-fuse exfat-utils
+apt -y install flatpak snapd exfat-fuse exfat-utils
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
@@ -21,6 +21,7 @@ flatpak install -y org.videolan.VLC
 flatpak install -y org.inkscape.Inkscape
 flatpak install -y com.getpostman.Postman
 flatpak install -y org.darktable.Darktable
+flatpak install flathub org.gnome.Extensions
 #flatpak install -y com.visualstudio.code
 
 flatpak install -y com.microsoft.Teams
