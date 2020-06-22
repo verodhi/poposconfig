@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd exfat-fuse exfat-utils
+apt -y install flatpak snapd muon exfat-fuse exfat-utils
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
