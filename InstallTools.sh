@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd muon exfat-fuse exfat-utils openjdk-11-jre openjdk-11-jdk
+apt -y install flatpak snapd muon exfat-fuse exfat-utils
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
@@ -63,6 +63,10 @@ gpasswd -a $USER docker
 apt -y update
 apt -y upgrade
 apt -y autoremove
+
+# Install Open JDK
+#apt -y purge openjdk-\*
+#apt -y install openjdk-11-jre openjdk-11-jdk
 
 # Install Oracle Java for work
 #add-apt-repository -y ppa:linuxuprising/java
