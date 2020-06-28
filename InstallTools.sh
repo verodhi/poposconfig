@@ -49,6 +49,7 @@ add-apt-repository \
    stable"
 groupadd docker
 gpasswd -a $USER docker
+apt -y install docker-ce docker-ce-cli containerd.io
 
 # Install Anki Web
 #wget https://github.com/ankitects/anki/releases/download/2.1.26/anki-2.1.26-linux-amd64.tar.bz2
