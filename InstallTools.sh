@@ -49,6 +49,8 @@ add-apt-repository \
    stable"
 groupadd docker
 gpasswd -a $USER docker
+usermod -aG docker $USER
+
 apt -y install docker-ce docker-ce-cli containerd.io
 
 # Install Anki Web
