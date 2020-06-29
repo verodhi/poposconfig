@@ -38,7 +38,8 @@ flatpak install -y org.gnome.Chess
 
 # Snap packages
 snap install snap-store chromium
-sudo snap install code --classic
+snap install code --classic
+snap install hugo
 
 # Install Docker
 apt remove docker docker-engine docker.io containerd runc
