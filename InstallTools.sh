@@ -29,6 +29,7 @@ flatpak install -y com.slack.Slack
 flatpak install -y com.discordapp.Discord
 flatpak install -y org.gnome.DejaDup
 flatpak install -y com.uploadedlobster.peek
+flatpak install -y com.jgraph.drawio.desktop
 
 # Games
 flatpak install -y org.gnome.Mines
