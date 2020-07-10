@@ -31,6 +31,7 @@ flatpak install -y org.gnome.DejaDup
 flatpak install -y com.uploadedlobster.peek
 flatpak install -y com.jgraph.drawio.desktop
 flatpak install -y org.gnome.clocks
+flatpak install -y com.github.tchx84.Flatseal
 
 # Games
 flatpak install -y org.gnome.Mines
