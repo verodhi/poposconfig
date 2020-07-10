@@ -21,7 +21,7 @@ flatpak install -y org.videolan.VLC
 flatpak install -y org.inkscape.Inkscape
 flatpak install -y com.getpostman.Postman
 flatpak install -y org.darktable.Darktable
-flatpak install flathub org.gnome.Extensions
+flatpak install -y flathub org.gnome.Extensions
 #flatpak install -y com.visualstudio.code
 
 flatpak install -y com.microsoft.Teams
@@ -30,6 +30,7 @@ flatpak install -y com.discordapp.Discord
 flatpak install -y org.gnome.DejaDup
 flatpak install -y com.uploadedlobster.peek
 flatpak install -y com.jgraph.drawio.desktop
+flatpak install -y org.gnome.clocks
 
 # Games
 flatpak install -y org.gnome.Mines
@@ -73,6 +74,8 @@ conda install -y -c conda-forge jupyterlab
 #cd $HOME/Downloads
 #rm -r anki-2.1.26-linux-amd64
 #rm anki-2.1.26-linux-amd64.tar.bz2
+
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh | bash
 
 apt -y update
 apt -y upgrade
