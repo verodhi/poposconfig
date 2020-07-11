@@ -32,6 +32,7 @@ flatpak install -y com.uploadedlobster.peek
 flatpak install -y com.jgraph.drawio.desktop
 flatpak install -y org.gnome.clocks
 flatpak install -y com.github.tchx84.Flatseal
+flatpak install -y org.wireshark.Wireshark
 
 # Games
 flatpak install -y org.gnome.Mines
@@ -76,7 +77,8 @@ conda install -y -c conda-forge jupyterlab
 #rm -r anki-2.1.26-linux-amd64
 #rm anki-2.1.26-linux-amd64.tar.bz2
 
-wget -O - https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh | bash
+# Note taking app
+# wget -O - https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh | bash
 
 apt -y update
 apt -y upgrade
