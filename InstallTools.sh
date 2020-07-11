@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd muon exfat-fuse exfat-utils
+apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tools timeshift flameshot
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
@@ -61,8 +61,8 @@ apt -y install docker-ce docker-ce-cli containerd.io
 # Install python packages
 
 apt -y install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
-#wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
-#bash Anaconda3-2020.02-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+bash Anaconda3-2020.02-Linux-x86_64.sh
 
 # Install jupyter notebook
 conda install -y -c conda-forge jupyterlab
