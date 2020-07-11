@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tools timeshift flameshot
+apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tools timeshift flameshot hugo
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
@@ -43,7 +43,6 @@ flatpak install -y org.gnome.Chess
 # Snap packages
 snap install snap-store chromium
 snap install code --classic
-snap install hugo
 
 # Install Docker
 apt remove docker docker-engine docker.io containerd runc
