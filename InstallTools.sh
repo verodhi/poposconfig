@@ -33,6 +33,7 @@ flatpak install -y com.jgraph.drawio.desktop
 flatpak install -y org.gnome.clocks
 flatpak install -y com.github.tchx84.Flatseal
 flatpak install -y org.wireshark.Wireshark
+flatpak install -y org.audacityteam.Audacity
 
 # Games
 flatpak install -y org.gnome.Mines
