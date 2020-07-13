@@ -34,6 +34,7 @@ flatpak install -y org.gnome.clocks
 flatpak install -y com.github.tchx84.Flatseal
 flatpak install -y org.wireshark.Wireshark
 flatpak install -y org.audacityteam.Audacity
+flatpak install -y com.github.wwmm.pulseeffects
 
 # Games
 flatpak install -y org.gnome.Mines
