@@ -4,7 +4,7 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tools timeshift flameshot hugo bluetooth bluez bluez-tools rfkill blueman
+apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tool timeshift flameshot hugo bluetooth bluez bluez-tools rfkill blueman
 apt -y remove firefox libreoffice-common libreoffice-core docker
 apt -y update
 apt -y autoremove
