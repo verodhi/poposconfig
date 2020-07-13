@@ -64,7 +64,7 @@ apt -y install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcu
 # bash Anaconda3-2020.02-Linux-x86_64.sh
 
 # Install jupyter notebook
-conda install -y -c conda-forge jupyterlab
+#conda install -y -c conda-forge jupyterlab
 
 # Install Anki Web
 #wget https://github.com/ankitects/anki/releases/download/2.1.26/anki-2.1.26-linux-amd64.tar.bz2
@@ -77,7 +77,7 @@ conda install -y -c conda-forge jupyterlab
 #rm anki-2.1.26-linux-amd64.tar.bz2
 
 # Note taking app
-wget -O - https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh | bash
+# wget -O - https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh | bash
 
 apt -y update
 apt -y upgrade
