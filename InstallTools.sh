@@ -10,38 +10,42 @@ apt -y update
 apt -y autoremove
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+
 flatpak install -y flathub
-flatpak install -y org.mozilla.firefox
-flatpak install -y com.obsproject.Studio
-flatpak install -y org.remmina.Remmina
-flatpak install -y org.libreoffice.LibreOffice
-flatpak install -y org.gimp.GIMP
-flatpak install -y org.blender.Blender
-flatpak install -y org.videolan.VLC
-flatpak install -y org.inkscape.Inkscape
-flatpak install -y com.getpostman.Postman
-flatpak install -y org.darktable.Darktable
+flatpak install -y flathub org.mozilla.firefox
+flatpak install -y flathub com.obsproject.Studio
+flatpak install -y flathub org.remmina.Remmina
+flatpak install -y flathub org.libreoffice.LibreOffice
+flatpak install -y flathub org.gimp.GIMP
+flatpak install -y flathub org.blender.Blender
+flatpak install -y flathub org.videolan.VLC
+flatpak install -y flathub org.inkscape.Inkscape
+flatpak install -y flathub com.getpostman.Postman
+flatpak install -y flathub org.darktable.Darktable
 flatpak install -y flathub org.gnome.Extensions
 #flatpak install -y com.visualstudio.code
 
-flatpak install -y com.microsoft.Teams
-flatpak install -y com.slack.Slack
-flatpak install -y com.discordapp.Discord
-flatpak install -y org.gnome.DejaDup
-flatpak install -y com.uploadedlobster.peek
-flatpak install -y com.jgraph.drawio.desktop
-flatpak install -y org.gnome.clocks
-flatpak install -y com.github.tchx84.Flatseal
-flatpak install -y org.wireshark.Wireshark
-flatpak install -y org.audacityteam.Audacity
-flatpak install -y com.github.wwmm.pulseeffects
-flatpak install -y org.gnome.Shotwell
+flatpak install -y flathub com.microsoft.Teams
+flatpak install -y flathub com.slack.Slack
+flatpak install -y flathub com.discordapp.Discord
+flatpak install -y flathub org.gnome.DejaDup
+flatpak install -y flathub com.uploadedlobster.peek
+flatpak install -y flathub com.jgraph.drawio.desktop
+flatpak install -y flathub org.gnome.clocks
+flatpak install -y flathub com.github.tchx84.Flatseal
+flatpak install -y flathub org.wireshark.Wireshark
+flatpak install -y flathub org.audacityteam.Audacity
+flatpak install -y flathub com.github.wwmm.pulseeffects
+flatpak install -y flathub org.gnome.Shotwell
+flatpak install -y flathub org.kde.kdenlive
 
 # Games
-flatpak install -y org.gnome.Mines
-flatpak install -y com.valvesoftware.Steam
-flatpak install -y org.godotengine.Godot
-flatpak install -y org.gnome.Chess
+flatpak install -y flathub org.gnome.Mines
+flatpak install -y flathub com.valvesoftware.Steam
+flatpak install -y flathub org.godotengine.Godot
+flatpak install -y flathub org.gnome.Chess
+flatpak install -y gnome-nightly org.gnome.NautilusDevel
 
 # Snap packages
 snap install snap-store chromium
