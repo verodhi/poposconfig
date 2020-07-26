@@ -10,7 +10,7 @@ apt -y update
 apt -y autoremove
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+# flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 
 flatpak install -y flathub
 flatpak install -y flathub org.mozilla.firefox
@@ -37,7 +37,6 @@ flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub org.wireshark.Wireshark
 flatpak install -y flathub org.audacityteam.Audacity
 flatpak install -y flathub com.github.wwmm.pulseeffects
-flatpak install -y flathub org.gnome.Shotwell
 flatpak install -y flathub org.kde.kdenlive
 
 # Games
@@ -45,7 +44,8 @@ flatpak install -y flathub org.gnome.Mines
 flatpak install -y flathub com.valvesoftware.Steam
 flatpak install -y flathub org.godotengine.Godot
 flatpak install -y flathub org.gnome.Chess
-flatpak install -y gnome-nightly org.gnome.NautilusDevel
+flatpak install -y flathub org.gnome.Shotwell
+# flatpak install -y gnome-nightly org.gnome.NautilusDevel
 
 # Snap packages
 snap install snap-store chromium
