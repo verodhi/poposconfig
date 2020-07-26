@@ -44,7 +44,8 @@ flatpak install -y flathub org.gnome.Mines
 flatpak install -y flathub com.valvesoftware.Steam
 flatpak install -y flathub org.godotengine.Godot
 flatpak install -y flathub org.gnome.Chess
-flatpak install -y flathub org.gnome.Shotwell
+flatpak install -y flathub org.kde.digikam
+# flatpak install -y flathub org.gnome.Shotwell
 # flatpak install -y gnome-nightly org.gnome.NautilusDevel
 
 # Snap packages
