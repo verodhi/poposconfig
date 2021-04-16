@@ -4,8 +4,8 @@
 apt -y update
 apt -y upgrade
 apt -y autoremove
-apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tool timeshift flameshot hugo bluetooth bluez bluez-tools rfkill blueman
-apt -y remove firefox libreoffice-common libreoffice-core docker
+apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tool timeshift flameshot hugo bluetooth bluez bluez-tools rfkill
+apt -y remove firefox libreoffice-common libreoffice-core docker geary
 apt -y update
 apt -y autoremove
 
@@ -49,7 +49,7 @@ flatpak install -y flathub org.kde.digikam
 # flatpak install -y gnome-nightly org.gnome.NautilusDevel
 
 # Snap packages
-snap install snap-store chromium
+snap install snap-store chromium mailspring
 snap install code --classic
 
 # Install Docker
