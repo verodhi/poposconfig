@@ -24,6 +24,7 @@ flatpak install -y flathub org.inkscape.Inkscape
 flatpak install -y flathub com.getpostman.Postman
 flatpak install -y flathub org.darktable.Darktable
 flatpak install -y flathub org.gnome.Extensions
+flatpak install -y flathub org.telegram.desktop
 #flatpak install -y com.visualstudio.code
 
 flatpak install -y flathub com.microsoft.Teams
