@@ -25,7 +25,7 @@ flatpak install -y flathub com.getpostman.Postman
 flatpak install -y flathub org.darktable.Darktable
 flatpak install -y flathub org.gnome.Extensions
 flatpak install -y flathub org.telegram.desktop
-flatpak install -y flathub org.keepassxc.KeePassXC
+#flatpak install -y flathub org.keepassxc.KeePassXC
 #flatpak install -y com.visualstudio.code
 
 flatpak install -y flathub com.microsoft.Teams
@@ -51,7 +51,7 @@ flatpak install -y flathub org.kde.digikam
 # flatpak install -y gnome-nightly org.gnome.NautilusDevel
 
 # Snap packages
-snap install snap-store chromium mailspring brave
+snap install snap-store chromium mailspring brave keepassxc
 snap install code --classic
 
 # Install Docker
