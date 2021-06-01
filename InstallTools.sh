@@ -73,6 +73,8 @@ apt -y install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcu
 
 # Install rclone
 curl https://rclone.org/install.sh | bash
+# Configure keepassxc
+curl https://raw.githubusercontent.com/keepassxreboot/keepassxc/master/utils/keepassxc-snap-helper.sh | bash
 # wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 # bash Anaconda3-2020.02-Linux-x86_64.sh
 
