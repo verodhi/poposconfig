@@ -51,7 +51,7 @@ flatpak install -y flathub org.kde.digikam
 # flatpak install -y gnome-nightly org.gnome.NautilusDevel
 
 # Snap packages
-snap install snap-store chromium mailspring brave keepassxc
+snap install snap-store chromium mailspring keepassxc
 snap install code --classic
 
 # Install Docker
@@ -73,6 +73,13 @@ apt -y install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcu
 
 # Install rclone
 curl https://rclone.org/install.sh | bash
+# Install Brave Browser
+
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+apt update
+apt install brave-browser
+
 # Configure keepassxc
 curl https://raw.githubusercontent.com/keepassxreboot/keepassxc/master/utils/keepassxc-snap-helper.sh | bash
 # wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
