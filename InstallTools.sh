@@ -5,15 +5,14 @@ apt -y update
 apt -y upgrade
 apt -y autoremove
 apt -y install flatpak snapd muon exfat-fuse exfat-utils gnome-tweak-tool timeshift flameshot hugo bluetooth bluez bluez-tools rfkill stacer
-apt -y remove firefox libreoffice-common libreoffice-core docker geary
+apt -y remove libreoffice-common libreoffice-core docker geary
 apt -y update
 apt -y autoremove
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-# flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 
 flatpak install -y flathub
-flatpak install -y flathub org.mozilla.firefox
+# flatpak install -y flathub org.mozilla.firefox
 flatpak install -y flathub com.obsproject.Studio
 flatpak install -y flathub org.remmina.Remmina
 flatpak install -y flathub org.libreoffice.LibreOffice
@@ -44,7 +43,7 @@ flatpak install -y flathub org.kde.kdenlive
 # Games
 flatpak install -y flathub org.gnome.Mines
 flatpak install -y flathub com.valvesoftware.Steam
-flatpak install -y flathub org.godotengine.Godot
+# flatpak install -y flathub org.godotengine.Godot
 flatpak install -y flathub org.gnome.Chess
 flatpak install -y flathub org.kde.digikam
 # flatpak install -y flathub org.gnome.Shotwell
@@ -68,20 +67,25 @@ usermod -aG docker $USER
 apt -y install docker-ce docker-ce-cli containerd.io
 
 # Install python packages
-
 apt -y install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 
 # Install rclone
 curl https://rclone.org/install.sh | bash
-# Install Brave Browser
 
+# Install Brave Browser
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
 apt install brave-browser
-
 # Configure keepassxc
 curl https://raw.githubusercontent.com/keepassxreboot/keepassxc/master/utils/keepassxc-snap-helper.sh | bash
+
+
+
+apt -y update
+apt -y upgrade
+apt -y autoremove
+
 # wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 # bash Anaconda3-2020.02-Linux-x86_64.sh
 
@@ -100,10 +104,6 @@ curl https://raw.githubusercontent.com/keepassxreboot/keepassxc/master/utils/kee
 
 # Note taking app
 # wget -O - https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh | bash
-
-apt -y update
-apt -y upgrade
-apt -y autoremove
 
 # Install Open JDK
 #apt -y purge openjdk-\*
